@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hi, I am Cream</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: #f7f7f7;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            padding: 80px 20px;
+            background-color: #1e1e2f;
+            color: white;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            color: #ffac41;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            font-weight: 400;
+            color: #e0e0e0;
+        }
+
+        .section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .intro p {
+            font-size: 1.2rem;
+            max-width: 900px;
+            margin: 0 auto 40px;
+            color: #666;
+            line-height: 1.8;
+        }
+
+        .skills, .projects, .contact {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .skills-item, .projects-item {
+            width: 250px;
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .skills-item:hover, .projects-item:hover {
+            transform: scale(1.05);
+        }
+
+        .skills-item h3, .projects-item h3 {
+            font-size: 1.5rem;
+            color: #1e1e2f;
+        }
+
+        .skills-item p, .projects-item p {
+            color: #777;
+            font-size: 1rem;
+            margin-top: 10px;
+        }
+
+        .projects-item img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 1rem;
+        }
+
+        .contact-form button {
+            padding: 15px;
+            background-color: #ffac41;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 1.1rem;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #e68a2e;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            background-color: #1e1e2f;
+            color: white;
+        }
+
+        footer p {
+            font-size: 1rem;
+            color: #ccc;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            .section h2 {
+                font-size: 2rem;
+            }
+
+            .skills-item, .projects-item {
+                width: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Hi, I am Cream</h1>
+        <p>Creative Professional | Designer | Developer</p>
+    </header>
+
+    <!-- About Me Section -->
+    <section class="section intro">
+        <h2>About Me</h2>
+        <p>
+            Hello! I’m Cream, a passionate designer and developer focused on creating clean, user-friendly websites and apps.
+            I love bringing ideas to life through design and code. Whether it's a sleek landing page or a complex web app, 
+            I always strive to make the user experience intuitive and visually appealing. I’m always learning and exploring new technologies.
+        </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills">
+        <h2>My Skills</h2>
+        <div class="skills-item">
+            <h3>Web Design</h3>
+            <p>Creating visually engaging and user-friendly websites with a focus on UI/UX principles.</p>
+        </div>
+        <div class="skills-item">
+            <h3>Frontend Development</h3>
+            <p>Skilled in HTML, CSS, JavaScript, and frameworks like React and Vue.js to build dynamic websites.</p>
+        </div>
+        <div class="skills-item">
+            <h3>Backend Development</h3>
+            <p>Experienced in backend technologies like Node.js, Express, and databases like MongoDB and MySQL.</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects">
+        <h2>My Projects</h2>
+        <div class="projects-item">
+            <img src="https://via.placeholder.com/400x200/333/fff?text=Project+1" alt="Project 1">
+            <h3>Project 1</h3>
+            <p>A web design project that combines modern aesthetics with functional UI/UX design.</p>
+        </div>
+        <div class="projects-item">
+            <img src="https://via.placeholder.com/400x200/333/fff?text=Project+2" alt="Project 2">
+            <h3>Project 2</h3>
+            <p>A fully-responsive e-commerce platform built with React and Node.js, supporting real-time transactions.</p>
+        </div>
+        <div class="projects-item">
+            <img src="https://via.placeholder.com/400x200/333/fff?text=Project+3" alt="Project 3">
+            <h3>Project 3</h3>
+            <p>An innovative mobile app for task management, integrating calendar and notification features.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact">
+        <h2>Contact Me</h2>
+        <div class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Cream Design Studio. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+
